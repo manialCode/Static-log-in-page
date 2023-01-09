@@ -1,0 +1,198 @@
+:root {
+    --shadow: 0 .1rem .5rem rgba(0, 0, 0, .3);
+    --glow: 0 .1rem -.4rem -.2rem rgba(222, 222, 222, .3);
+}
+
+
+body {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    background: linear-gradient(to right, #333399, #ff00cc);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    text-align: center;
+}
+
+.log-in__container {
+    width: 400px;
+    height: 630px;
+    background-color: rgba(255, 255, 255, .8);
+    padding: 4rem;
+    border-radius: 10px;
+    margin: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.log-in__container .log-in_header .log-in-icon {
+    font-size: 5.5rem;
+}
+
+.log-in__container .log-in_header {
+    padding: 10px;
+}
+
+.log-in__container .log-in_header h1 {
+    font-size: 3rem;
+    margin: 20px;
+}
+
+.log-in__container .enter {
+    display: block;
+    margin: 10px 0;
+}
+
+.log-in__container .enter {
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 50px;
+    margin: 30px 5px;
+    border: 1px solid rgba(222, 222, 222, .3);
+    box-shadow: var(--shadow);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    text-align: left;
+}
+
+.log-in__container .enter input {
+    all: unset;
+    padding: 20px 30px;
+    font-weight: 500;
+    color: #000;
+}
+
+.log-in__container .enter i{
+    position: relative;
+    left: 20px;
+}
+
+.log-in__container form .remb-frgot {
+    justify-content: space-between;
+    padding-bottom: 35px;
+    padding-top: 15px;
+}
+
+.log-in__container form p,
+.log-in__container form a{
+    margin: 0 auto 0 90px;
+}
+
+.log-in__container form button {
+    padding: 10px 100px;
+    background-color: #000;
+    color: #fafafa;
+    border-radius: 50px;
+    font-size: 17px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.log-in__container p{
+    margin: 30px 0;
+}
+
+.alternate__log{
+    margin: 15px auto 3.5rem auto;
+}
+
+.alternate__log p{
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+.alternate__log a{
+    display: inline;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, .8);
+    border-radius: 500px;
+    margin: 30px 10px;
+    font-size: 25px;
+    cursor: pointer;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    -ms-border-radius: 500px;
+    -o-border-radius: 500px;
+}
+
+@media (max-width:600px) {
+    .log-in__container{
+        width: 70%;
+        padding: 3rem;
+        margin: 10px;
+    }
+    .log-in__container .log-in_header .log-in-icon {
+        font-size: 4rem;
+    }
+    
+    .log-in__container .log-in_header {
+        padding: 10px;
+    }
+    
+    .log-in__container .log-in_header h1 {
+        font-size: 2.5rem;
+        margin: 10px;
+    }
+
+    .log-in__container .remb-frgot {
+        padding: 10px 0;
+        margin-bottom: 10px;
+    }
+
+    .log-in__container form a{
+        text-align: center;
+        font-size: 1rem;
+        margin: 10px 0 0 0 ;
+        display: block;
+    }
+
+    .log-in__container .enter input {
+        padding: 20px 0px 20px 30px;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .log-in__container .enter{
+        margin: 30px 5px;
+    }
+
+    .log-in__container .enter i{
+        left: 20px;
+    }
+}
+
+@media (max-width:400px) {
+    .log-in__container .enter{
+        height: 3rem;
+    }
+
+    .log-in__container .enter input{
+        padding: 0 0 10px 45px;
+    }
+    
+    .log-in__container .enter i{
+        top: 17px;
+    }
+    
+    .log-in__container form a{
+        text-align: center;
+        font-size: 1rem;
+        margin: 10px 0 0 0 ;
+        display: block;
+    }
+
+    .log-in__container form button{
+        padding: 10px 75px;
+        margin: 0;
+    }
+}
